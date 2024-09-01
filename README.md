@@ -76,12 +76,11 @@ The CBIT Management Information System is a dynamic, responsive platform designe
 
   
 ## CONTRIBUTORS
+Rohith Chowki
 
 Sivani Varada
 
 Pranav Vuddagiri
-
-Rohith Chowki
 
 Vishnu Vamsith Yejju
 
