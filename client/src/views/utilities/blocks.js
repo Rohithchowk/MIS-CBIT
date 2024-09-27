@@ -28,7 +28,7 @@ const FilterSearchblock = ({ block, department }) => {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const response = await axios.get(`http://localhost:8000/api/block/categories/${block}/${department}`);
+        const response = await axios.get(`https://miscbit-10.onrender.com/api/block/categories/${block}/${department}`);
         setCategories(response.data);
       } catch (error) {
         console.error(`Error fetching categories for department ${department} in block ${block}:`, error);
@@ -46,7 +46,7 @@ const FilterSearchblock = ({ block, department }) => {
 
   const handlealldataselect = async () => {
     try {
-      const response = await axios.get(`http://localhost:8000/api/block/allData/${block}/${department}`);
+      const response = await axios.get(`https://miscbit-10.onrender.com/api/block/allData/${block}/${department}`);
       if (!response.data) {
         console.error(`No data found for department ${department} in block ${block}`);
         return;
@@ -174,7 +174,7 @@ const FilterSearchblock = ({ block, department }) => {
   };
 
   const fetchData = async () => {
-    const url = `http://localhost:8000/api/block/category/${block}/${department}/${selectedCategory}`;
+    const url = `https://miscbit-10.onrender.com/api/block/category/${block}/${department}/${selectedCategory}`;
     try {
       const response = await axios.get(url);
       setDepartmentData(response.data);
